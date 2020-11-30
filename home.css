@@ -1,0 +1,91 @@
+
+header{
+  padding:10px;
+  text-align: center;
+  background: url("https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=") ;
+  background-repeat: no-repeat;
+background-size: cover;
+
+}
+body{
+  background-color: #5786F9;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.para{
+  font-size: 120%;
+   background: lightblue url("https://techcrunch.com/wp-content/uploads/2020/08/GettyImages-1132089008.jpg?w=730&crop=1") no-repeat fixed center;
+background-size: cover;
+ background-color: lightgrey;
+  color: black;
+
+
+}
+
+.points {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+ }
+
+.sub {
+  float: left;
+}
+
+ .sub a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ .sub a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #B6B6B4;}
+div{
+  width: 100%;
+}
+input[type=submit] {
+  background-color:#000000;
+  color: white;
+  padding:10px 10px;;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #808080;
+}
+nav a{
+border-radius: 5px;
+color:#000000;
+background:#b3b3b3b3;
+text-decoration:none;
+display:inline-block;
+width:30%;
+padding:10px;
+margin:20px;
+text-align: center;
+}
+nav a:hover {
+background-color: #ffffff;
+}
+footer{
+   font-size: 120%;
+   background: url("https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=") ;
+  background-repeat: no-repeat;
+background-size: cover;
+color: white;
+padding-left: 3px;
+}

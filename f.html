@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Experiment4</title>
+<style>
+    
+        input[type=text] {
+            width: 40%;
+            padding: 6px 12px;
+            margin: 8px 0;
+        }
+        input[type=email] {
+            width: 38.5%;
+            padding: 6px 12px;
+            margin: 8px 0;
+        }
+        input[type=password] {
+            width: 38%;
+            padding: 6px 12px;
+            margin: 8px 0;
+        }
+        input:invalid{
+                 color:red;
+       }
+       input:valid{
+                color:green;
+       }
+        textarea {
+               width: 42%;
+               height: 84px;
+               padding: 8px 16px;
+               resize: none;
+      }
+
+      select {
+              width: 22%;
+              padding: 6px 8px;
+              border-radius: 4px;
+          }
+       input[type=submit] {
+                      background-color: #4CAF50;
+                      border: none;
+                      color: white;
+                      padding: 12px 28px;
+                      text-decoration: none;
+                      margin: 4px 2px;
+                      cursor: pointer; 
+       }
+       .all {
+           border-radius: 5px;
+           background-color: #F0F8FF;
+           border-style: double;
+           padding: 20px;
+
+       }
+       h1 {
+        background-color: #AEEE;
+        padding: 10px 18px;
+        margin: 4px;
+        font-family: Helvetica;
+       }
+</style>
+<!--<link rel="stylesheet" type="text/css" href="exp4.css"> -->
+<script type="text/javascript">
+    function validateForm()                                  
+{ 
+    var name = document.forms["myForm"]["name"];               
+    var email = document.forms["myForm"]["email"];    
+    var password = document.forms["myForm"]["password"];  
+    var comment = document.forms["myForm"]["comment"];  
+   
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+   
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (password.value == "")                           
+    { 
+        window.alert("Please enter your password here."); 
+        password.focus(); 
+        return false; 
+    } 
+   
+    if (comment.value == "")                               
+    { 
+        window.alert("Please enter your comment."); 
+        comment.focus(); 
+        return false; 
+    } 
+    return true; 
+}
+</script> 
+<!--<script type="text/javascript" src="fforms.js"></script>-->
+</head>
+<body>
+<h1><center>Feedback Form</center></h1>
+<div class="all">
+<h3>Please provide your feedback below</h3>
+<form name="myForm" autocomplete="off" action="F.html" onsubmit="return validateForm()" method="post">
+<label for="name">Name:</label>
+<input type="text"name="name"id="name" placeholder="Enter your name" pattern=".{1,}[A-Za-z]" title="Must contain alphabets, and at least 2 or more characters"><br><br>
+<label for="email">Email-Id:</label>
+<input type="email"name="email"id="email"  placeholder="Enter your email-id: abc@gmail.com"><br><br>
+<label for="password">Password:</label>
+<input type="password"name="password"id="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 5 or more characters"><br><br>
+<label for="aboutus">How did you hear about Us?</label><br>
+<input type="checkbox" id="Google" name="Google" value="Google">
+<label for="Google"> Google</label><br>
+<input type="checkbox" id="Friends" name="Friends" value="Friends">
+<label for="Friends">Friends</label><br>
+<input type="checkbox" id="Advertisements" name="Advertisements" value="Advertisements">
+<label for="Advertisements"> Advertisements</label><br>
+<input type="checkbox" id="Other" name="Other" value="Other">
+<label for="Other"> Other</label><br><br>
+<label for="experience">How was your experience?</label>
+<select name="experience" id="experience">
+<option value=""></option>
+<option value="Amazing">Very Satisfied</option>
+<option value="Satisfactory">Satisfied</option>
+<option value="Not Satisfactory">Neutral</option>
+<option value="Not Satisfactory">Unsatisfied</option>
+<option value="Very Bad">Very Unsatisfied</option>
+</select><br><br>
+<label for="recommend">Would you recommend our site to Others?</label><br><br>
+<input type="radio"name="recommend">Yes
+<input type="radio"name="recommend">No
+<input type="radio"name="recommend">Maybe<br><br>
+<label for="comment">Comment: </label><br>
+<textarea name="comment"cols="60"rows="6" placeholder="Your Suggestions..."></textarea><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+ .fa {
+    padding: 7px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #C13584;
+    color: white;
+  }
+  
+.user_card{
+	height: 530px;
+	width: 400px;
+	background:lightblue;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+}
+
+.form_container{
+    float: inline-start;
+	margin-top: 100px;
+    margin-bottom: 100px;
+   
+}
+/* .h1{
+	padding-left: 110px;
+	 background: url("https://playinonpurple.files.wordpress.com/2016/08/download.png?w=640") ;
+background-repeat: no-repeat;
+background-size: 25% 100%;
+background-position: center;
+	font-family: 'Pacifico';
+  }
+ .h2{
+  font-family: "Sofia";
+  font-size: 100px;
+text-align: center;
+}
+.nav a{
+border-radius: 5px;
+color:#000000;
+background:#b3b3b3b3;
+text-decoration:none;
+display:inline-block;
+width:30%;
+padding:10px;
+margin:20px;
+text-align: center;
+}
+.header{
+  padding:20px;
+  text-align: center;
+  background: url("https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=") ;
+  background-repeat: no-repeat;
+background-size: cover;
+}
+
+.footer{
+	margin-top: 500px;
+   font-size: 120%;
+   background: url("https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=") ;
+  background-repeat: no-repeat;
+background-size: cover;
+color: white;
+
+padding-left: 3px;
+} */
+ 
+
+.signup_btn{
+margin-top:20px;
+	width:75%;
+	background-color:rgb(199, 30, 30);
+	color:white;
+}
+
+.login_container{
+	padding: 0 2rem;	
+}
+.input-group-text{
+	display: block;
+	background: #c0392b !important;
+	color: white !important;
+	border: 0 !important;
+	border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus{
+	box-shadow: none !important;
+	outline: 0px !important;
+}
